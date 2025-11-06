@@ -284,6 +284,50 @@
   
   /* Scroll margin to account for sticky header */
   section { scroll-margin-top: 84px; }
+
+  /* Guestbook form styles */
+  .guestbook-form {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  .guestbook-form .form-row {
+    margin-bottom: 1.5rem;
+  }
+  .guestbook-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+  .guestbook-form input,
+  .guestbook-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: var(--surface);
+  }
+  .guestbook-form input:focus,
+  .guestbook-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.1);
+  }
+  .guestbook-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  .guestbook-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
   
   
   
